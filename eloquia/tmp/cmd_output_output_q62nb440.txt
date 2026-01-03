@@ -1,0 +1,8 @@
+# Detect IPv4 address (exclude 127.x and 169.x)
+$ip = (Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.IPAddress -notmatch '^(127|169)\.' } | Select-Object -First 1 -ExpandProperty IPAddress)
+
+$hosts = "$env:SystemRoot\System32\drivers\etc\hosts"
+
+$content = Get-Content $hosts
+$content += "$ip eloquia.htb qooqle.htb"
+$content | Set-Content $hosts -Force

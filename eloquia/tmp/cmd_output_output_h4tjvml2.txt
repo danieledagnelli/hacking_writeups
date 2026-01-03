@@ -1,0 +1,32 @@
+23:        private string _logFilePath;
+27:        //private static FileSystemWatcher watcher;
+33:            // check if the log.csv file path is 
+34:            _logFilePath = ConfigurationManager.AppSettings["LogFilePath"];
+35:            if (string.IsNullOrEmpty(_logFilePath))
+37:                WriteToLogFile("FATAL: No log-file path provided in the configuration file");
+38:                throw new ConfigurationErrorsException("No log-file path provided in the configuration file");
+40:            if (!File.Exists(_logFilePath))
+42:                WriteToLogFile("FATAL: log-file is not accessible, please check if the path is correct or check it's ACLs");
+43:                throw new ArgumentException("FATAL: log-file is not accessible, please check if the path is correct or check it's ACLs");
+48:            WriteToLogFile("Service is started");
+54:            ProcessLogFile();
+58:            WriteToLogFile("Service is stopped");
+62:            //WriteToLogFile("Service is recall");
+63:            ProcessLogFile();
+66:        public void WriteToLogFile(string Message)
+75:            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\ServiceLog_" + DateTime.Now.Date.ToShortDateString().Replace('/', '_') + ".txt";
+76:            if (!File.Exists(filepath))
+78:                // Create a file to write to.
+79:                using (StreamWriter sw = File.CreateText(filepath))
+81:                    sw.WriteLine(Message);
+86:                using (StreamWriter sw = File.AppendText(filepath))
+88:                    sw.WriteLine(Message);
+93:        private void ProcessLogFile()
+96:            WriteToLogFile("Proccessing log file");
+99:                string[] lines = File.ReadAllLines(_logFilePath);
+106:                        //WriteToLogFile(ip);
+120:                                EventLog.WriteEntry(String.Format("IP address {0} has been blocked due to {1} failed login attempts.", ip, maxFailedAttempts), EventLogEntryType.Warning);
+121:                                WriteToLogFile("IP:" + ip + " Blocked due to 10 failure login attempts");
+131:                EventLog.WriteEntry(String.Format("Error reading log file: {0}", ex.Message), EventLogEntryType.Error);
+153:                EventLog.WriteEntry(String.Format("Error blocking IP: {0}", ex.Message), EventLogEntryType.Error);
+154:                WriteToLogFile(String.Format("Error blocking IP: {0}", ex.Message));

@@ -1,0 +1,2 @@
+FINDSTR: Cannot open database
+FINDSTR: Cannot open password

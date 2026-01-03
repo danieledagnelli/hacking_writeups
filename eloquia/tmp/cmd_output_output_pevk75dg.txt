@@ -1,0 +1,15 @@
+C:\Program Files\Qooqle IPS Software NT SERVICE\TrustedInstaller:(I)(F)
+                                     NT SERVICE\TrustedInstaller:(I)(CI)(IO)(F)
+                                     NT AUTHORITY\SYSTEM:(I)(F)
+                                     NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
+                                     BUILTIN\Administrators:(I)(F)
+                                     BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
+                                     BUILTIN\Users:(I)(RX)
+                                     BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+                                     CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                                     APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                                     APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+                                     APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+                                     APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files

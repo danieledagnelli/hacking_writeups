@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="ProxyToWaitress_Qooqle" stopProcessing="true">
+          <match url="(.*)" />
+          <conditions>
+            <add input="{REQUEST_URI}" pattern="^/static/.*" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="http://127.0.0.1:8080/{R:1}" appendQueryString="true" />
+        </rule>
+      </rules>
+    </rewrite>
+
+  <security>
+    <requestFiltering>
+      <hiddenSegments>
+        <add segment="bin" />
+      </hiddenSegments>
+      <requestLimits maxAllowedContentLength="2097152" />
+    </requestFiltering>
+  </security>
+  <httpProtocol>
+    <customHeaders>
+      <add name="X-Frame-Options" value="DENY" />
+      <add name="X-Content-Type-Options" value="nosniff" />
+    </customHeaders>
+  </httpProtocol>
+<httpErrors errorMode="Custom" existingResponse="PassThrough">
+            <remove statusCode="404" subStatusCode="-1" />
+  <remove statusCode="403" />
+  <remove statusCode="500" />
+  <error statusCode="403" path="/error.html" responseMode="File" />
+  <error statusCode="500" path="/error.html" responseMode="File" />
+</httpErrors>
+  <staticContent>
+    <mimeMap fileExtension="." mimeType="text/plain" />
+  </staticContent>
+  </system.webServer>
+</configuration>

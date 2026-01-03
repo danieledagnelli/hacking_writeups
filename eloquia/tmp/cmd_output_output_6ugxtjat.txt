@@ -1,0 +1,7 @@
+C:\Web\Qooqle\log.csv BUILTIN\IIS_IUSRS:(I)(RX)
+                      NT AUTHORITY\SYSTEM:(I)(F)
+                      BUILTIN\Administrators:(I)(F)
+                      BUILTIN\Users:(I)(RX)
+                      ELOQUIA\web:(I)(F)
+
+Successfully processed 1 files; Failed processing 0 files

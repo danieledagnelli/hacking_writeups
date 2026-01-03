@@ -1,0 +1,6 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 22C6-32BB
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin\Debug\Logs
+
+File Not Found

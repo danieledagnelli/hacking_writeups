@@ -1,0 +1,8 @@
+[
+  {
+    "source": "seleniumSimulator.py",
+    "type": "django_admin",
+    "username": "admin",
+    "password": "MyEl0qu!@Admin"
+  }
+]

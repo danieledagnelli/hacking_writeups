@@ -1,0 +1,158 @@
+ï»¿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Linq;
+using System.ServiceProcess;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Timers;
+using System.Text.RegularExpressions;
+using NetFwTypeLib;
+using System.Configuration;
+using System.Configuration.Install;
+
+
+namespace Failure2Ban
+{
+    public partial class Service1 : ServiceBase
+    {
+        // service config
+        private string _logFilePath;
+        private static readonly string pattern = @"^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2},\s(?<account>\w+),\s(?<ip>(\d{1,3}\.){3}\d{1,3}),\sFAILED$";
+        private static readonly int maxFailedAttempts = 10;
+        private static List<string> blockedIPes = new List<string>();
+        //private static FileSystemWatcher watcher;
+
+        Timer timer = new Timer(); // name space(using System.Timers;)
+        public Service1(string[] args)
+        {
+            InitializeComponent();
+            // check if the log.csv file path is 
+            _logFilePath = ConfigurationManager.AppSettings["LogFilePath"];
+            if (string.IsNullOrEmpty(_logFilePath))
+            {
+                WriteToLogFile("FATAL: No log-file path provided in the configuration file");
+                throw new ConfigurationErrorsException("No log-file path provided in the configuration file");
+            }
+            if (!File.Exists(_logFilePath))
+            {
+                WriteToLogFile("FATAL: log-file is not accessible, please check if the path is correct or check it's ACLs");
+                throw new ArgumentException("FATAL: log-file is not accessible, please check if the path is correct or check it's ACLs");
+            }
+        }
+        protected override void OnStart(string[] args)
+        {
+            WriteToLogFile("Service is started");
+            timer.Elapsed += new ElapsedEventHandler(OnElapsedTime);
+            timer.Interval = 30000; //number in milisecinds
+            timer.Enabled = true;
+
+            // start the log checking and blocking malicious IPes
+            ProcessLogFile();
+        }
+        protected override void OnStop()
+        {
+            WriteToLogFile("Service is stopped");
+        }
+        private void OnElapsedTime(object source, ElapsedEventArgs e)
+        {
+            //WriteToLogFile("Service is recall");
+            ProcessLogFile();
+        }
+
+        public void WriteToLogFile(string Message)
+        {
+            //provide a time and date for the log entry
+            Message = DateTime.Now + " - " + Message;
+            string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+            string filepath = AppDomain.CurrentDomain.BaseDirectory + "\\Logs\\ServiceLog_" + DateTime.Now.Date.ToShortDateString().Replace('/', '_') + ".txt";
+            if (!File.Exists(filepath))
+            {
+                // Create a file to write to.
+                using (StreamWriter sw = File.CreateText(filepath))
+                {
+                    sw.WriteLine(Message);
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = File.AppendText(filepath))
+                {
+                    sw.WriteLine(Message);
+                }
+            }
+        }
+
+        private void ProcessLogFile()
+        {
+            Dictionary<string, int> failedAttemptsPerIP = new Dictionary<string, int>();
+            WriteToLogFile("Proccessing log file");
+            try
+            {
+                string[] lines = File.ReadAllLines(_logFilePath);
+                foreach (string line in lines)
+                {
+                    Match match = Regex.Match(line, pattern);
+                    if (match.Success)
+                    {
+                        string ip = match.Groups["ip"].Value;
+                        //WriteToLogFile(ip);
+                        if (!blockedIPes.Contains(ip))
+                        {
+                            if (failedAttemptsPerIP.ContainsKey(ip))
+                            {
+                                failedAttemptsPerIP[ip]++;
+                            }
+                            else
+                            {
+                                failedAttemptsPerIP[ip] = 1;
+                            }
+                            if (failedAttemptsPerIP[ip] >= maxFailedAttempts)
+                            {
+                                BlockIP(ip);
+                                EventLog.WriteEntry(String.Format("IP address {0} has been blocked due to {1} failed login attempts.", ip, maxFailedAttempts), EventLogEntryType.Warning);
+                                WriteToLogFile("IP:" + ip + " Blocked due to 10 failure login attempts");
+                                failedAttemptsPerIP.Remove(ip);
+                                blockedIPes.Add(ip);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (IOException ex)
+            {
+                EventLog.WriteEntry(String.Format("Error reading log file: {0}", ex.Message), EventLogEntryType.Error);
+            }
+        }
+
+        private void BlockIP(string ip)
+        {
+            try
+            {
+                INetFwPolicy2 fwPolicy2 = (INetFwPolicy2)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FwPolicy2"));
+                INetFwRule firewallRule = (INetFwRule)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FWRule"));
+                firewallRule.Name = "Block IP " + ip;
+                firewallRule.Description = "Block IP address " + ip + " due to failed login attempts";
+                firewallRule.Protocol = (int)NET_FW_IP_PROTOCOL_.NET_FW_IP_PROTOCOL_ANY;
+                firewallRule.LocalAddresses = "*";
+                firewallRule.RemoteAddresses = ip;
+                firewallRule.Direction = NET_FW_RULE_DIRECTION_.NET_FW_RULE_DIR_IN;
+                firewallRule.Action = NET_FW_ACTION_.NET_FW_ACTION_BLOCK;
+                firewallRule.Enabled = true;
+                fwPolicy2.Rules.Add(firewallRule);
+            }
+            catch (Exception ex)
+            {
+                EventLog.WriteEntry(String.Format("Error blocking IP: {0}", ex.Message), EventLogEntryType.Error);
+                WriteToLogFile(String.Format("Error blocking IP: {0}", ex.Message));
+            }
+        }
+    }
+}

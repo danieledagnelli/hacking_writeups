@@ -1,0 +1,9 @@
+C:\Web\Qooqle BUILTIN\IIS_IUSRS:(OI)(CI)(RX)
+              NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+              BUILTIN\Administrators:(I)(OI)(CI)(F)
+              BUILTIN\Users:(I)(OI)(CI)(RX)
+              BUILTIN\Users:(I)(CI)(S,WD,AD)
+              ELOQUIA\web:(I)(F)
+              CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+
+Successfully processed 1 files; Failed processing 0 files

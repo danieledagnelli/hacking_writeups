@@ -1,0 +1,2 @@
+FINDSTR: Cannot open clean
+FINDSTR: Cannot open failure

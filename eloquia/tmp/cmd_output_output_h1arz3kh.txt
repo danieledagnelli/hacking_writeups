@@ -1,0 +1,2 @@
+    DefaultUserName    REG_SZ    
+    PasswordExpiryWarning    REG_DWORD    0x5

@@ -1,0 +1,9 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 22C6-32BB
+
+ Directory of C:\Web\Qooqle\testdir
+
+01/03/2026  08:47 AM    <DIR>          .
+01/03/2026  08:47 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)   3,240,607,744 bytes free

@@ -1,0 +1,196 @@
+Author:                               ELOQUIA\Administrator
+Schedule Type:                        At system start up
+Author:                               ELOQUIA\Administrator
+Schedule Type:                        At system start up
+Author:                               ELOQUIA\Administrator
+Schedule Type:                        At system start up
+Author:                               ELOQUIA\Administrator
+Schedule Type:                        At system start up
+Author:                               $(@%systemroot%\system32\SrvInitConfig.exe,-100)
+Task To Run:                          %windir%\system32\srvinitconfig.exe /disableconfigtask
+Comment:                              $(@%systemroot%\system32\SrvInitConfig.exe,-101)
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\appidpolicyconverter.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\appidcertstorecheck.exe 
+Schedule Type:                        At system start up
+Task To Run:                          %windir%\system32\compattelrunner.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\compattelrunner.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\compattelrunner.exe 
+Run As User:                          SYSTEM
+Author:                               $(@%SystemRoot%\system32\invagent.dll,-701)
+Task To Run:                          %windir%\system32\compattelrunner.exe -maintenance
+Comment:                              $(@%SystemRoot%\system32\invagent.dll,-702)
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\rundll32.exe Startupscan.dll,SusRunTask
+Task To Run:                          %windir%\system32\AppHostRegistrationVerifier.exe 
+Task To Run:                          %windir%\system32\AppHostRegistrationVerifier.exe 
+Task To Run:                          %windir%\system32\rundll32.exe Windows.Storage.ApplicationData.dll,CleanupTemporaryState
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\dstokenclean.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\rundll32.exe %windir%\system32\AppxDeploymentClient.dll,AppxPreStageCleanupRunTask
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\rundll32.exe /d acproxy.dll,PerformAutochkOperations
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\bcdboot.exe %windir% /sysrepair
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Task To Run:                          %SystemRoot%\System32\wsqmcons.exe 
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\defrag.exe -c -h -k -g -$
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\devicecensus.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\devicecensus.exe 
+Run As User:                          SYSTEM
+Comment:                              The Windows Scheduled Maintenance Task performs periodic maintenance of the computer system by fixing problems automatically or reporting them through Security and Maintenance.
+Task To Run:                          %windir%\system32\dxgiadaptercache.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\dxgiadaptercache.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\cleanmgr.exe /autoclean /d %systemdrive%
+Comment:                              Maintenance task used by the system to launch a silent auto disk cleanup when running low on free disk space.
+Task To Run:                          %windir%\system32\rundll32.exe dfdts.dll,DfdGetDefaultPolicyAndSMART
+Comment:                              The Windows Disk Diagnostic reports general disk and system information to Microsoft for users participating in the Customer Experience Program.
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\DFDWiz.exe 
+Task To Run:                          %windir%\system32\disksnapshot.exe -z
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\System32\LocationNotificationWindows.exe 
+Task To Run:                          %windir%\System32\WindowsActionDialog.exe 
+Comment:                              Measures a system's performance and capabilities
+Run As User:                          Administrators
+Comment:                              Schedules a memory diagnostic in response to system events.
+Run As User:                          Administrators
+Comment:                              Schedules a memory diagnostic in response to system events.
+Run As User:                          Administrators
+Comment:                              Schedules a memory diagnostic in response to system events.
+Run As User:                          Administrators
+Comment:                              Schedules a memory diagnostic in response to system events.
+Run As User:                          Administrators
+Run As User:                          Administrators
+Task To Run:                          %SystemRoot%\System32\MbaeParserTask.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\lpremove.exe 
+Run As User:                          SYSTEM
+TaskName:                             \Microsoft\Windows\Multimedia\SystemSoundsService
+Comment:                              System Sounds User Mode Agent
+Task To Run:                          %windir%\system32\gatherNetworkInfo.vbs 
+Comment:                              This task initiates synchronization of Offline Files when a user logs onto the system.
+Task To Run:                          %WINDIR%\system32\SecureBootEncodeUEFI.exe 
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Task To Run:                          %WINDIR%\system32\SecureBootEncodeUEFI.exe 
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Task To Run:                          %WINDIR%\system32\SecureBootEncodeUEFI.exe 
+Run As User:                          SYSTEM
+Task To Run:                          %systemroot%\system32\rundll32.exe %systemroot%\system32\pla.dll,PlaHost "Server Manager Performance Monitor" "$(Arg0)"
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Run As User:                          SYSTEM
+Task To Run:                          %SystemRoot%\System32\drvinst.exe 6
+Comment:                              Generalize driver state in order to prepare the system to be bootable on any hardware configuration.
+Run As User:                          SYSTEM
+TaskName:                             \Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem
+Comment:                              This task analyzes the system looking for conditions that may cause high energy use.
+Run As User:                          SYSTEM
+Run As User:                          Administrators
+Task To Run:                          %systemroot%\system32\cscript.exe /B /nologo %systemroot%\system32\calluxxprovider.vbs $(Arg0) $(Arg1) $(Arg2)
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\ServerManagerLauncher.exe 
+Run As User:                          Administrators
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\System32\rundll32.exe %windir%\System32\Windows.SharedPC.AccountManager.dll,StartMaintenance
+Run As User:                          SYSTEM
+Comment:                              Provides support for shell components that access system data
+Run As User:                          SYSTEM
+Task To Run:                          %systemroot%\system32\cmd.exe /d /c %systemroot%\system32\silcollector.cmd publish
+Run As User:                          SYSTEM
+Task To Run:                          %systemroot%\system32\cmd.exe /d /c %systemroot%\system32\silcollector.cmd configure
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Task To Run:                          %windir%\system32\SpaceAgent.exe 
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Task To Run:                          %windir%\system32\SpaceAgent.exe 
+Run As User:                          SYSTEM
+Author:                               $(@%SystemRoot%\system32\spaceman.exe,-2)
+Task To Run:                          %windir%\system32\spaceman.exe /Work
+Comment:                              $(@%SystemRoot%\system32\spaceman.exe,-3)
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Author:                               $(@%SystemRoot%\system32\spaceman.exe,-2)
+Task To Run:                          %windir%\system32\spaceman.exe /Work
+Comment:                              $(@%SystemRoot%\system32\spaceman.exe,-3)
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\speech_onecore\common\SpeechRuntime.exe StartedFromTask
+Comment:                              Initializes the Storage Tiers Management service when the first tiered storage space is detected on the system. Do not remove or modify this task.
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\defrag.exe -c -h -g -# -m 8 -i 13500
+Comment:                              Optimizes the placement of data in storage tiers on all tiered storage spaces in the system.
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\sc.exe start w32time task_started
+Task To Run:                          %windir%\system32\tzsync.exe 
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Schedule Type:                        At system start up
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Task To Run:                          %windir%\system32\rundll32.exe bfe.dll,BfeOnServiceStartTypeChange
+Run As User:                          SYSTEM
+Folder: \Microsoft\Windows\WindowsColorSystem
+TaskName:                             \Microsoft\Windows\WindowsColorSystem\Calibration Loader
+TaskName:                             \Microsoft\Windows\WindowsColorSystem\Calibration Loader
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Task To Run:                          %SystemRoot%\System32\dsregcmd.exe $(Arg0) $(Arg1) $(Arg2)
+Run As User:                          SYSTEM
+Task To Run:                          %SystemRoot%\System32\dsregcmd.exe $(Arg0) $(Arg1) $(Arg2)
+Run As User:                          SYSTEM
+Task To Run:                          %SystemRoot%\System32\dsregcmd.exe /checkrecovery

@@ -1,0 +1,5 @@
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\SrpV2\Exe\f5114e04-bb0f-4510-ac72-dd66e8d4b267
+    Value    REG_SZ    <FilePublisherRule Id="f5114e04-bb0f-4510-ac72-dd66e8d4b267" Name="NTKD.EXE, i MICROSOFTr WINDOWSr OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny"><Conditions><FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTr WINDOWSr OPERATING SYSTEM" BinaryName="NTKD.EXE"><BinaryVersionRange LowSection="*" HighSection="*"/></FilePublisherCondition></Conditions></FilePublisherRule>
+
+

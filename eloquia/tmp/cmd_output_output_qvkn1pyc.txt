@@ -1,0 +1,2 @@
+FINDSTR: /A ignored
+FINDSTR: Cannot open FW

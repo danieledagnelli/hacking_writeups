@@ -1,0 +1,97 @@
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect
+from django.urls import reverse, reverse_lazy
+from .forms import CustomUserCreationForm, CustomUserProfileForm
+from .models import *
+from .logging_utils import log_login_attempt
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
+from django.contrib.auth import logout
+from oauth2_provider.decorators import protected_resource
+from django.http import JsonResponse
+
+
+
+
+def index(request):
+    return render(request, 'index.html')
+
+
+
+def user_logout(request):
+    logout(request)
+    return redirect(reverse('auth_login'))
+
+
+
+def account_register(request):
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            # process the form data
+            form.save()
+            return redirect(reverse('auth_login'))
+        else:
+            # form is not valid
+            context = {"title": "Account Register", "form": form}
+    else:
+        form = CustomUserCreationForm()
+        context = {"title": "Account Register", "form": form}
+    return render(request, 'register.html', context)
+
+
+
+def auth_login(request):
+    if request.method == 'POST':
+        # check creds
+        form = AuthenticationForm(data=request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                log_login_attempt(request, username, 'SUCCESSFUL')
+                if 'next' in request.GET:
+                    return HttpResponseRedirect(request.GET["next"])
+                else:
+                    return redirect(reverse('profile'))
+        else:
+            log_login_attempt(request, request.POST["username"], 'FAILED')
+    else:
+        form = AuthenticationForm()
+    return render(request, 'login.html', {'form': form, 'title': 'Login'})
+
+
+
+@login_required
+def profile(request):
+    user = request.user
+    if request.method == 'POST':
+        form = CustomUserProfileForm(request.POST, instance=user)
+        if form.is_valid():
+            form.save()
+            return redirect('profile')
+    else:
+        form = CustomUserProfileForm(instance=user)
+    context = {
+        'form': form,
+    }
+    return render(request, 'profile.html', context)
+
+
+
+@protected_resource(scopes=['read'])
+def api_get_userInfo(request):
+    user = request.resource_owner
+    # Access user information here and return the response
+    response_data = {
+        'username': user.username,
+        'email': user.username+'@qmail.htb',
+        'first_name': user.first_name,
+        'last_name': user.last_name,
+        'address': user.address
+    }
+    return JsonResponse(response_data)

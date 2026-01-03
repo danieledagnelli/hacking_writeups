@@ -1,0 +1,173 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 22C6-32BB
+
+ Directory of C:\Program Files\Qooqle IPS Software
+
+04/30/2024  12:40 PM    <DIR>          .
+04/30/2024  12:40 PM    <DIR>          ..
+04/30/2024  12:44 PM    <DIR>          Failure2Ban - Prototype
+               0 File(s)              0 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype
+
+04/30/2024  12:44 PM    <DIR>          .
+04/30/2024  12:44 PM    <DIR>          ..
+05/01/2024  07:53 PM    <DIR>          Failure2Ban
+04/23/2024  04:18 AM               923 Failure2Ban.sln
+04/29/2024  11:55 PM            56,832 Failure2Ban.v11.suo
+               2 File(s)         57,755 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban
+
+05/01/2024  07:53 PM    <DIR>          .
+05/01/2024  07:53 PM    <DIR>          ..
+04/25/2024  10:32 AM               273 App.config
+04/30/2024  12:37 PM    <DIR>          bin
+04/25/2024  10:20 AM             3,828 Failure2Ban.csproj
+04/30/2024  12:33 PM    <DIR>          obj
+04/25/2024  10:12 AM               589 Program.cs
+04/23/2024  04:48 AM               446 ProjectInstaller.cs
+04/23/2024  04:51 AM             1,914 ProjectInstaller.Designer.cs
+04/23/2024  04:48 AM             6,416 ProjectInstaller.resx
+04/30/2024  12:33 PM    <DIR>          Properties
+04/30/2024  12:33 PM    <DIR>          Service References
+05/01/2024  06:48 AM             6,680 Service1.cs
+04/23/2024  04:18 AM             1,106 Service1.Designer.cs
+               8 File(s)         21,252 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin
+
+04/30/2024  12:37 PM    <DIR>          .
+04/30/2024  12:37 PM    <DIR>          ..
+10/28/2025  11:04 AM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin\Debug
+
+10/28/2025  11:04 AM    <DIR>          .
+10/28/2025  11:04 AM    <DIR>          ..
+05/01/2024  06:48 AM            13,312 Failure2Ban.exe
+04/30/2024  12:39 PM               283 Failure2Ban.exe.config
+04/29/2024  11:55 PM            28,160 Failure2Ban.pdb
+04/29/2024  11:53 PM            22,984 Failure2Ban.vshost.exe
+04/25/2024  10:39 AM               273 Failure2Ban.vshost.exe.config
+05/06/2022  09:20 PM               490 Failure2Ban.vshost.exe.manifest
+01/03/2026  12:00 AM    <DIR>          Logs
+               6 File(s)         65,502 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin\Debug\Logs
+
+01/03/2026  12:00 AM    <DIR>          .
+01/03/2026  12:00 AM    <DIR>          ..
+10/11/2025  05:48 AM             8,928 ServiceLog_10_11_2025.txt
+10/12/2025  01:26 PM             5,680 ServiceLog_10_12_2025.txt
+10/13/2025  01:46 PM            18,482 ServiceLog_10_13_2025.txt
+10/14/2025  01:12 PM            22,866 ServiceLog_10_14_2025.txt
+10/15/2025  01:53 PM            23,780 ServiceLog_10_15_2025.txt
+10/18/2025  12:53 PM               272 ServiceLog_10_18_2025.txt
+10/19/2025  01:49 PM            11,356 ServiceLog_10_19_2025.txt
+10/20/2025  01:08 PM            14,171 ServiceLog_10_20_2025.txt
+10/21/2025  01:42 PM             9,248 ServiceLog_10_21_2025.txt
+10/22/2025  01:27 PM            16,041 ServiceLog_10_22_2025.txt
+10/27/2025  12:28 PM            14,447 ServiceLog_10_27_2025.txt
+10/28/2025  11:20 AM             8,595 ServiceLog_10_28_2025.txt
+10/06/2025  05:45 PM             4,699 ServiceLog_10_6_2025.txt
+10/07/2025  01:21 PM            45,229 ServiceLog_10_7_2025.txt
+10/08/2025  06:55 AM            10,435 ServiceLog_10_8_2025.txt
+11/28/2025  12:27 PM            11,023 ServiceLog_11_28_2025.txt
+11/05/2025  12:11 PM             1,048 ServiceLog_11_5_2025.txt
+11/06/2025  01:43 PM               669 ServiceLog_11_6_2025.txt
+12/09/2025  02:22 PM             7,684 ServiceLog_12_9_2025.txt
+01/02/2026  11:59 PM            69,332 ServiceLog_1_2_2026.txt
+01/03/2026  09:21 AM            59,126 ServiceLog_1_3_2026.txt
+03/05/2025  10:30 PM               178 ServiceLog_3_5_2025.txt
+04/20/2025  03:27 PM            30,277 ServiceLog_4_20_2025.txt
+04/22/2025  10:59 PM            11,244 ServiceLog_4_22_2025.txt
+04/23/2025  12:14 AM             9,431 ServiceLog_4_23_2025.txt
+04/26/2025  10:59 PM            14,014 ServiceLog_4_26_2025.txt
+04/27/2025  08:41 AM            15,478 ServiceLog_4_27_2025.txt
+05/02/2025  07:42 AM             2,056 ServiceLog_5_2_2025.txt
+05/04/2024  08:24 PM             6,319 ServiceLog_5_4_2024.txt
+05/04/2025  07:44 PM             1,704 ServiceLog_5_4_2025.txt
+05/05/2024  07:59 PM             3,438 ServiceLog_5_5_2024.txt
+05/05/2025  05:09 PM               130 ServiceLog_5_5_2025.txt
+05/06/2024  01:01 PM               350 ServiceLog_5_6_2024.txt
+09/07/2025  10:59 PM             8,654 ServiceLog_9_7_2025.txt
+09/07/2025  11:17 PM             1,344 ServiceLog_9_8_2025.txt
+              35 File(s)        467,728 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\obj
+
+04/30/2024  12:33 PM    <DIR>          .
+04/30/2024  12:33 PM    <DIR>          ..
+04/30/2024  12:33 PM    <DIR>          Debug
+04/30/2024  12:33 PM    <DIR>          Release
+               0 File(s)              0 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\obj\Debug
+
+04/30/2024  12:33 PM    <DIR>          .
+04/30/2024  12:33 PM    <DIR>          ..
+04/23/2024  04:46 AM             1,019 DesignTimeResolveAssemblyReferences.cache
+04/25/2024  10:20 AM             7,290 DesignTimeResolveAssemblyReferencesInput.cache
+04/29/2024  11:53 PM             1,277 Failure2Ban.csproj.FileListAbsolute.txt
+04/23/2024  09:48 PM               913 Failure2Ban.csproj.GenerateResource.Cache
+04/23/2024  09:48 PM               737 Failure2Ban.csproj.ResolveComReference.cache
+04/29/2024  11:55 PM             2,379 Failure2Ban.csprojResolveAssemblyReference.cache
+04/29/2024  11:55 PM            13,312 Failure2Ban.exe
+04/29/2024  11:55 PM            28,160 Failure2Ban.pdb
+04/25/2024  10:20 AM               180 Failure2Ban.ProjectInstaller.resources
+04/23/2024  09:48 PM            22,016 Interop.NetFwTypeLib.dll
+04/23/2024  04:18 AM                 0 TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+04/23/2024  04:18 AM                 0 TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+04/23/2024  04:18 AM                 0 TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+04/30/2024  12:33 PM    <DIR>          TempPE
+              13 File(s)         77,283 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\obj\Debug\TempPE
+
+04/30/2024  12:33 PM    <DIR>          .
+04/30/2024  12:33 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\obj\Release
+
+04/30/2024  12:33 PM    <DIR>          .
+04/30/2024  12:33 PM    <DIR>          ..
+04/25/2024  10:19 AM             7,296 DesignTimeResolveAssemblyReferencesInput.cache
+04/29/2024  11:55 PM             1,297 Failure2Ban.csproj.FileListAbsolute.txt
+04/23/2024  09:48 PM               913 Failure2Ban.csproj.GenerateResource.Cache
+04/23/2024  09:48 PM               737 Failure2Ban.csproj.ResolveComReference.cache
+04/25/2024  10:20 AM             2,379 Failure2Ban.csprojResolveAssemblyReference.cache
+04/29/2024  11:55 PM            13,312 Failure2Ban.exe
+04/29/2024  11:55 PM            26,112 Failure2Ban.pdb
+04/25/2024  10:20 AM               180 Failure2Ban.ProjectInstaller.resources
+04/23/2024  09:48 PM            22,016 Interop.NetFwTypeLib.dll
+04/23/2024  10:24 AM                 0 TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+04/23/2024  10:24 AM                 0 TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
+04/23/2024  10:24 AM                 0 TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
+04/30/2024  12:33 PM    <DIR>          TempPE
+              12 File(s)         74,242 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\obj\Release\TempPE
+
+04/30/2024  12:33 PM    <DIR>          .
+04/30/2024  12:33 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\Properties
+
+04/30/2024  12:33 PM    <DIR>          .
+04/30/2024  12:33 PM    <DIR>          ..
+04/23/2024  04:18 AM             1,434 AssemblyInfo.cs
+               1 File(s)          1,434 bytes
+
+ Directory of C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\Service References
+
+04/30/2024  12:33 PM    <DIR>          .
+04/30/2024  12:33 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+     Total Files Listed:
+              77 File(s)        765,196 bytes
+              38 Dir(s)   3,151,257,600 bytes free

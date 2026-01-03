@@ -1,0 +1,1 @@
+01/03/2026  08:49 AM    <JUNCTION>     log.csv [C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin\Debug\Logs]

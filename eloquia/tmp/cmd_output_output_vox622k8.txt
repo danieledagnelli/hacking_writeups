@@ -1,0 +1,4 @@
+[SC] EnumQueryServicesStatus:OpenService FAILED 5:
+
+Access is denied.
+

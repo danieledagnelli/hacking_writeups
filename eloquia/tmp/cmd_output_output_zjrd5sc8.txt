@@ -1,0 +1,12 @@
+App.config
+bin
+Failure2Ban.csproj
+obj
+Program.cs
+ProjectInstaller.cs
+ProjectInstaller.Designer.cs
+ProjectInstaller.resx
+Properties
+Service References
+Service1.cs
+Service1.Designer.cs

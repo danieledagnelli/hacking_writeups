@@ -1,0 +1,26 @@
+User name                    Olivia.KAT
+Full Name                    Olivia.KAT
+Comment                      
+User's comment               
+Country/region code          000 (System Default)
+Account active               Yes
+Account expires              Never
+
+Password last set            4/20/2024 10:49:00 AM
+Password expires             Never
+Password changeable          4/20/2024 10:49:00 AM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script                 
+User profile                 
+Home directory               
+Last logon                   10/28/2025 11:12:24 AM
+
+Logon hours allowed          All
+
+Local Group Memberships      *Remote Management Use*Users                
+Global Group memberships     *None                 
+The command completed successfully.
+

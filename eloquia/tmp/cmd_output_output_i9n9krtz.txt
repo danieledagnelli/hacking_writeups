@@ -1,0 +1,1041 @@
+TaskName:                             \clear eloquia.htb(sql-explorer) query logs
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/3/2026 9:18:56 AM
+Task To Run:                          "C:\Program Files\Python311\python.exe" manage.py clear_explorer_logs
+Run As User:                          web
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \seleniumSimulator
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/3/2026 9:18:56 AM
+Task To Run:                          "C:\Program Files\Python311\python.exe" "C:\Program Files\Automation Scripts\seleniumSimulator.py"
+Run As User:                          web
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Start eloquia.htb
+Next Run Time:                        N/A
+Status:                               Running
+Last Run Time:                        1/2/2026 1:09:26 PM
+Task To Run:                          "C:\Program Files\Automation Scripts\eloquia.htb-runserver.bat" 
+Run As User:                          web
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Start qooqle.htb
+Next Run Time:                        N/A
+Status:                               Running
+Last Run Time:                        1/2/2026 1:09:26 PM
+Task To Run:                          "C:\Program Files\Automation Scripts\qooqle.htb-runserver.bat" 
+Run As User:                          web
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Server Initial Configuration Task
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/28/2025 12:18:43 PM
+Task To Run:                          %windir%\system32\srvinitconfig.exe /disableconfigtask
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:11 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319 64
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:11 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319 64 Critical
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\.NET Framework\.NET Framework NGEN v4.0.30319 Critical
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (Automated)
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Everyone
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (Automated)
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Everyone
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Active Directory Rights Management Services Client\AD RMS Rights Policy Template Management (Manual)
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Everyone
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\AppID\PolicyConverter
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:10:55 PM
+Task To Run:                          %windir%\system32\appidpolicyconverter.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\AppID\VerifiedPublisherCertStoreCheck
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:49:08 PM
+Task To Run:                          %windir%\system32\appidcertstorecheck.exe 
+Run As User:                          LOCAL SERVICE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser
+Next Run Time:                        1/4/2026 3:39:14 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 4:09:48 AM
+Task To Run:                          %windir%\system32\compattelrunner.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 96:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser
+Next Run Time:                        1/4/2026 3:36:59 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 4:09:48 AM
+Task To Run:                          %windir%\system32\compattelrunner.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 96:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser
+Next Run Time:                        1/4/2026 4:26:31 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 4:09:48 AM
+Task To Run:                          %windir%\system32\compattelrunner.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 96:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Application Experience\ProgramDataUpdater
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\compattelrunner.exe -maintenance
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Application Experience\StartupAppTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/28/2025 11:19:42 AM
+Task To Run:                          %windir%\system32\rundll32.exe Startupscan.dll,SusRunTask
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\ApplicationData\appuriverifierdaily
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        10/28/2025 10:05:19 AM
+Task To Run:                          %windir%\system32\AppHostRegistrationVerifier.exe 
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 00:15:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\ApplicationData\appuriverifierinstall
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\AppHostRegistrationVerifier.exe 
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 00:15:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\ApplicationData\CleanupTemporaryState
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\rundll32.exe Windows.Storage.ApplicationData.dll,CleanupTemporaryState
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\ApplicationData\DsSvcCleanup
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\dstokenclean.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\AppxDeploymentClient\Pre-staged app cleanup
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        4/19/2024 6:26:06 PM
+Task To Run:                          %windir%\system32\rundll32.exe %windir%\system32\AppxDeploymentClient.dll,AppxPreStageCleanupRunTask
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Autochk\Proxy
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:49:08 PM
+Task To Run:                          %windir%\system32\rundll32.exe /d acproxy.dll,PerformAutochkOperations
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\BitLocker\BitLocker Encrypt All Drives
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\BitLocker\BitLocker MDM policy Refresh
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Bluetooth\UninstallDeviceTask
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          BthUdTask.exe $(Arg0)
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\BrokerInfrastructure\BgTaskRegistrationMaintenanceTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:06:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Chkdsk\ProactiveScan
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Chkdsk\SyspartRepair
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\bcdboot.exe %windir% /sysrepair
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\CloudExperienceHost\CreateObjectTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Customer Experience Improvement Program\Consolidator
+Next Run Time:                        1/3/2026 12:00:00 PM
+Status:                               Ready
+Last Run Time:                        1/3/2026 6:00:00 AM
+Task To Run:                          %SystemRoot%\System32\wsqmcons.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Customer Experience Improvement Program\UsbCeip
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Data Integrity Scan\Data Integrity Scan
+Next Run Time:                        1/11/2026 2:44:38 AM
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:13:56 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Data Integrity Scan\Data Integrity Scan
+Next Run Time:                        1/12/2026 7:35:45 PM
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:13:56 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Data Integrity Scan\Data Integrity Scan for Crash Recovery
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Defrag\ScheduledDefrag
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\defrag.exe -c -h -k -g -$
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Device Information\Device
+Next Run Time:                        1/4/2026 4:18:53 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 4:52:02 AM
+Task To Run:                          %windir%\system32\devicecensus.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 96:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Device Information\Device
+Next Run Time:                        1/4/2026 3:58:53 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 4:52:02 AM
+Task To Run:                          %windir%\system32\devicecensus.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 96:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Diagnosis\Scheduled
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/28/2025 11:19:42 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\DirectX\DXGIAdapterCache
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:08:57 PM
+Task To Run:                          %windir%\system32\dxgiadaptercache.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\DirectX\DXGIAdapterCache
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:08:57 PM
+Task To Run:                          %windir%\system32\dxgiadaptercache.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\DiskCleanup\SilentCleanup
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/28/2025 11:19:42 AM
+Task To Run:                          %windir%\system32\cleanmgr.exe /autoclean /d %systemdrive%
+Comment:                              Maintenance task used by the system to launch a silent auto disk cleanup when running low on free disk space.
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: 00:15:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticDataCollector
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        10/6/2025 6:19:52 PM
+Task To Run:                          %windir%\system32\rundll32.exe dfdts.dll,DfdGetDefaultPolicyAndSMART
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticResolver
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\DFDWiz.exe 
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\DiskFootprint\Diagnostics
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\disksnapshot.exe -z
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\DiskFootprint\StorageSense
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/28/2025 11:19:42 AM
+Task To Run:                          COM handler
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\EDP\EDP App Launch Task
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\EDP\EDP Auth Task
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\EDP\EDP Inaccessible Credentials Task
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\EDP\StorageCardEncryption Task
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\ExploitGuard\ExploitGuard MDM policy Refresh
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:08:56 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\ExploitGuard\ExploitGuard MDM policy Refresh
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:08:56 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\ExploitGuard\ExploitGuard MDM policy Refresh
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:08:56 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\File Classification Infrastructure\Property Definition Sync
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:05:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Flighting\FeatureConfig\ReconcileFeatures
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/28/2025 10:21:14 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:05:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Flighting\OneSettings\RefreshCache
+Next Run Time:                        1/3/2026 8:33:07 PM
+Status:                               Ready
+Last Run Time:                        1/2/2026 10:11:13 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:05:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\InstallService\ScanForUpdates
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/28/2025 11:24:41 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\InstallService\ScanForUpdates
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/28/2025 11:24:41 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\InstallService\ScanForUpdates
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/28/2025 11:24:41 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\InstallService\ScanForUpdatesAsUser
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/28/2025 11:19:42 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\InstallService\WakeUpAndContinueUpdates
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\InstallService\WakeUpAndScanForUpdates
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Location\Notifications
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\System32\LocationNotificationWindows.exe 
+Run As User:                          Authenticated Users
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Location\WindowsActionDialog
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\System32\WindowsActionDialog.exe 
+Run As User:                          Authenticated Users
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Maintenance\WinSAT
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/28/2025 11:27:06 AM
+Task To Run:                          COM handler
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: 00:30:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Maps\MapsToastTask
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 00:00:05
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Maps\MapsUpdateTask
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          NETWORK SERVICE
+Stop Task If Runs X Hours and X Mins: 00:00:40
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\MemoryDiagnostic\ProcessMemoryDiagnosticEvents
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\MemoryDiagnostic\RunFullMemoryDiagnostic
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Mobile Broadband Accounts\MNO Metadata Parser
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %SystemRoot%\System32\MbaeParserTask.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:03:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\MUI\LPRemove
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\lpremove.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 09:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Multimedia\SystemSoundsService
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\NetTrace\GatherNetworkInfo
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\gatherNetworkInfo.vbs 
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Offline Files\Background Synchronization
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Authenticated Users
+Stop Task If Runs X Hours and X Mins: 24:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Offline Files\Logon Synchronization
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          Authenticated Users
+Stop Task If Runs X Hours and X Mins: 24:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\PI\SecureBootEncodeUEFI
+Next Run Time:                        1/15/2026 12:00:00 PM
+Status:                               Ready
+Last Run Time:                        12/9/2025 1:12:05 PM
+Task To Run:                          %WINDIR%\system32\SecureBootEncodeUEFI.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:00:10
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\PI\SecureBootEncodeUEFI
+Next Run Time:                        1/15/2026 12:00:00 PM
+Status:                               Ready
+Last Run Time:                        12/9/2025 1:12:05 PM
+Task To Run:                          %WINDIR%\system32\SecureBootEncodeUEFI.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:00:10
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\PI\SecureBootEncodeUEFI
+Next Run Time:                        1/15/2026 12:00:00 PM
+Status:                               Ready
+Last Run Time:                        12/9/2025 1:12:05 PM
+Task To Run:                          %WINDIR%\system32\SecureBootEncodeUEFI.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:00:10
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\PLA\Server Manager Performance Monitor
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %systemroot%\system32\rundll32.exe %systemroot%\system32\pla.dll,PlaHost "Server Manager Performance Monitor" "$(Arg0)"
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Plug and Play\Device Install Group Policy
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/28/2025 10:21:14 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 24:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Plug and Play\Device Install Reboot Required
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        12/9/2025 2:20:26 PM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Plug and Play\Device Install Reboot Required
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        12/9/2025 2:20:26 PM
+Task To Run:                          COM handler
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Plug and Play\Sysprep Generalize Drivers
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %SystemRoot%\System32\drvinst.exe 6
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Power Efficiency Diagnostics\AnalyzeSystem
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:34:52 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:05:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\RecoveryEnvironment\VerifyWinRE
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        4/30/2024 12:03:36 PM
+Task To Run:                          COM handler
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Server Manager\CleanupOldPerfLogs
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %systemroot%\system32\cscript.exe /B /nologo %systemroot%\system32\calluxxprovider.vbs $(Arg0) $(Arg1) $(Arg2)
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:02:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Server Manager\ServerManager
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        12/9/2025 2:20:26 PM
+Task To Run:                          %windir%\system32\ServerManagerLauncher.exe 
+Run As User:                          Administrators
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Servicing\StartComponentCleanup
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\SharedPC\Account Cleanup
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\System32\rundll32.exe %windir%\System32\Windows.SharedPC.AccountManager.dll,StartMaintenance
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:30:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Shell\CreateObjectTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        10/19/2025 1:38:15 PM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:00:30
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Shell\IndexerAutomaticMaintenance
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          COM handler
+Run As User:                          LOCAL SERVICE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Software Inventory Logging\Collection
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %systemroot%\system32\cmd.exe /d /c %systemroot%\system32\silcollector.cmd publish
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:10:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Software Inventory Logging\Configuration
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:09:56 PM
+Task To Run:                          %systemroot%\system32\cmd.exe /d /c %systemroot%\system32\silcollector.cmd configure
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:02:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\SpacePort\SpaceAgentTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\SpaceAgent.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 06:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\SpacePort\SpaceAgentTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\SpaceAgent.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 06:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\SpacePort\SpaceManagerTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\spaceman.exe /Work
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\SpacePort\SpaceManagerTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\spaceman.exe /Work
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Speech\HeadsetButtonPress
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\speech_onecore\common\SpeechRuntime.exe StartedFromTask
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Storage Tiers Management\Storage Tiers Management Initialization
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          COM handler
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Storage Tiers Management\Storage Tiers Optimization
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\defrag.exe -c -h -g -# -m 8 -i 13500
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\TextServicesFramework\MsCtfMonitor
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        12/9/2025 2:20:26 PM
+Task To Run:                          COM handler
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Time Synchronization\ForceSynchronizeTime
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        4/15/2024 9:27:19 PM
+Task To Run:                          COM handler
+Run As User:                          LOCAL SERVICE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Time Synchronization\SynchronizeTime
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\sc.exe start w32time task_started
+Run As User:                          LOCAL SERVICE
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Time Zone\SynchronizeTimeZone
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          %windir%\system32\tzsync.exe 
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 01:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\UPnP\UPnPHostConfig
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          sc.exe config upnphost start= auto
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Defender\Windows Defender Cache Maintenance
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:19:09 PM
+Task To Run:                          C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25100.9008-0\MpCmdRun.exe -IdleTask -TaskName WdCacheMaintenance
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Defender\Windows Defender Cleanup
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:08:59 PM
+Task To Run:                          C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25100.9008-0\MpCmdRun.exe -IdleTask -TaskName WdCleanup
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan
+Next Run Time:                        1/4/2026 3:14:07 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 3:14:08 AM
+Task To Run:                          C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25100.9008-0\MpCmdRun.exe Scan -ScheduleJob -ScanTrigger 55 -IdleScheduledJob
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Windows Defender\Windows Defender Verification
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:08:59 PM
+Task To Run:                          C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.25100.9008-0\MpCmdRun.exe -IdleTask -TaskName WdVerification
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Error Reporting\QueueReporting
+Next Run Time:                        1/3/2026 9:50:08 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 9:17:29 AM
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Error Reporting\QueueReporting
+Next Run Time:                        1/3/2026 10:12:27 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 9:17:29 AM
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Error Reporting\QueueReporting
+Next Run Time:                        1/3/2026 9:49:18 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 9:17:29 AM
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Error Reporting\QueueReporting
+Next Run Time:                        1/3/2026 9:50:37 AM
+Status:                               Ready
+Last Run Time:                        1/3/2026 9:17:29 AM
+Task To Run:                          %windir%\system32\wermgr.exe -upload
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 04:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\Windows Filtering Platform\BfeOnServiceStartTypeChange
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %windir%\system32\rundll32.exe bfe.dll,BfeOnServiceStartTypeChange
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Windows Media Sharing\UpdateLibrary
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          "%ProgramFiles%\Windows Media Player\wmpnscfg.exe" 
+Run As User:                          Authenticated Users
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\WindowsColorSystem\Calibration Loader
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        12/9/2025 2:20:26 PM
+Task To Run:                          COM handler
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\WindowsColorSystem\Calibration Loader
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        12/9/2025 2:20:26 PM
+Task To Run:                          COM handler
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\WindowsUpdate\Scheduled Start
+Next Run Time:                        1/3/2026 1:07:28 PM
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:13:56 PM
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        Disabled
+TaskName:                             \Microsoft\Windows\WindowsUpdate\Scheduled Start
+Next Run Time:                        1/3/2026 1:07:13 PM
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:13:56 PM
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\WindowsUpdate\Scheduled Start
+Next Run Time:                        1/3/2026 1:07:49 PM
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:13:56 PM
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\WindowsUpdate\Scheduled Start
+Next Run Time:                        1/3/2026 1:07:40 PM
+Status:                               Ready
+Last Run Time:                        1/2/2026 1:13:56 PM
+Task To Run:                          C:\Windows\system32\sc.exe start wuauserv
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Wininet\CacheTask
+Next Run Time:                        N/A
+Status:                               Ready
+Last Run Time:                        12/9/2025 2:20:25 PM
+Task To Run:                          COM handler
+Run As User:                          Users
+Stop Task If Runs X Hours and X Mins: Disabled
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Workplace Join\Automatic-Device-Join
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %SystemRoot%\System32\dsregcmd.exe $(Arg0) $(Arg1) $(Arg2)
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:05:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Workplace Join\Automatic-Device-Join
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %SystemRoot%\System32\dsregcmd.exe $(Arg0) $(Arg1) $(Arg2)
+Run As User:                          SYSTEM
+Stop Task If Runs X Hours and X Mins: 00:05:00
+Repeat: Stop If Still Running:        N/A
+TaskName:                             \Microsoft\Windows\Workplace Join\Recovery-Check
+Next Run Time:                        N/A
+Status:                               Disabled
+Last Run Time:                        11/30/1999 12:00:00 AM
+Task To Run:                          %SystemRoot%\System32\dsregcmd.exe /checkrecovery
+Run As User:                          INTERACTIVE
+Stop Task If Runs X Hours and X Mins: 02:00:00
+Repeat: Stop If Still Running:        N/A

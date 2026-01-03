@@ -1,0 +1,32 @@
+C:\Web\Eloquia\Eloquia\migrations\0001_initial.py:                ('password', models.CharField(max_length=128, verbose_name='password')),
+C:\Web\Eloquia\Eloquia\models.py:    def create_user(self, username, password=None, **extra_fields):
+C:\Web\Eloquia\Eloquia\models.py:        user.set_password(password)
+C:\Web\Eloquia\Eloquia\models.py:    def create_superuser(self, username, password=None, **extra_fields):
+C:\Web\Eloquia\Eloquia\models.py:        return self.create_user(username, password, **extra_fields)
+C:\Web\Eloquia\Eloquia\settings.py:# Password validation
+C:\Web\Eloquia\Eloquia\settings.py:# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+C:\Web\Eloquia\Eloquia\settings.py:AUTH_PASSWORD_VALIDATORS = [
+C:\Web\Eloquia\Eloquia\settings.py:        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+C:\Web\Eloquia\Eloquia\settings.py:        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+C:\Web\Eloquia\Eloquia\settings.py:        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+C:\Web\Eloquia\Eloquia\settings.py:        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+C:\Web\Eloquia\Eloquia\views.py:from django.contrib.auth.views import PasswordResetConfirmView
+C:\Web\Eloquia\Eloquia\views.py:            password = form.cleaned_data.get('password')
+C:\Web\Eloquia\Eloquia\views.py:            user = authenticate(request, username=username, password=password)
+C:\Web\Eloquia\Eloquia\views.py:        current_password = request.POST.get('password')
+C:\Web\Eloquia\Eloquia\views.py:        if authenticate(username=user.username, password=current_password):
+C:\Web\Eloquia\Eloquia\views.py:            messages.error(request, 'Incorrect Password.')
+C:\Web\Qooqle\Qooqle\migrations\0001_initial.py:                ('password', models.CharField(max_length=128, verbose_name='password')),
+C:\Web\Qooqle\Qooqle\models.py:    def create_user(self, username, password=None, **extra_fields):
+C:\Web\Qooqle\Qooqle\models.py:        user.set_password(password)
+C:\Web\Qooqle\Qooqle\models.py:    def create_superuser(self, username, password=None, **extra_fields):
+C:\Web\Qooqle\Qooqle\models.py:        return self.create_user(username, password, **extra_fields)
+C:\Web\Qooqle\Qooqle\settings.py:# Password validation
+C:\Web\Qooqle\Qooqle\settings.py:# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
+C:\Web\Qooqle\Qooqle\settings.py:AUTH_PASSWORD_VALIDATORS = [
+C:\Web\Qooqle\Qooqle\settings.py:        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+C:\Web\Qooqle\Qooqle\settings.py:        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+C:\Web\Qooqle\Qooqle\settings.py:        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+C:\Web\Qooqle\Qooqle\settings.py:        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+C:\Web\Qooqle\Qooqle\views.py:            password = form.cleaned_data.get('password')
+C:\Web\Qooqle\Qooqle\views.py:            user = authenticate(request, username=username, password=password)

@@ -1,0 +1,19 @@
+Microsoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Usage: CScript scriptname.extension [option...] [arguments...]
+
+Options:
+ //B         Batch mode: Suppresses script errors and prompts from displaying
+ //D         Enable Active Debugging
+ //E:engine  Use engine for executing script
+ //H:CScript Changes the default script host to CScript.exe
+ //H:WScript Changes the default script host to WScript.exe (default)
+ //I         Interactive mode (default, opposite of //B)
+ //Job:xxxx  Execute a WSF job
+ //Logo      Display logo (default)
+ //Nologo    Prevent logo display: No banner will be shown at execution time
+ //S         Save current command line options for this user
+ //T:nn      Time out in seconds:  Maximum time a script is permitted to run
+ //X         Execute script in debugger
+ //U         Use Unicode for redirected I/O from the console

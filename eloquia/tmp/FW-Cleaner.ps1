@@ -1,0 +1,9 @@
+$rules = Get-NetFirewallRule | Where-Object {$_.Direction -eq 'Inbound' -and $_.DisplayName -like 'Block IP*'}
+
+foreach ($rule in $rules) {
+    Remove-NetFirewallRule -Name $rule.Name
+}
+
+cmd /c "echo LOG FILE > C:\Web\Qooqle\log.csv"
+Restart-Service Failure2Ban
+rm "C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin\Debug\version.dll"

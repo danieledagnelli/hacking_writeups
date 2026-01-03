@@ -1,0 +1,4 @@
+using System.ServiceProcess;
+            ProcessLogFile();
+            ProcessLogFile();
+        private void ProcessLogFile()
