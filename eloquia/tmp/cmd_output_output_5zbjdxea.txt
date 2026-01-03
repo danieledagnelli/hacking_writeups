@@ -1,3 +1,0 @@
-@echo off
-cd /d C:\Web\Eloquia
-"C:\Program Files\Python311\python.exe" -m uvicorn --host 127.0.0.1 --port 8000 --workers 8 --limit-concurrency 100 --timeout-keep-alive 30 Eloquia.asgi:application --no-use-colors --no-access-log --log-level critical

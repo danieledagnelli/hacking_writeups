@@ -1,9 +1,0 @@
- Volume in drive C has no label.
- Volume Serial Number is 22C6-32BB
-
- Directory of C:\Web\Qooqle
-
-03/05/2025  12:57 PM               662 manage.py
-10/27/2025  10:58 AM               369 runserver.py
-               2 File(s)          1,031 bytes
-               0 Dir(s)   4,221,308,928 bytes free

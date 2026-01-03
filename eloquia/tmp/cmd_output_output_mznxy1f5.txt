@@ -1,8 +1,0 @@
-
-PRIVILEGES INFORMATION
-----------------------
-
-Privilege Name                Description                    State   
-============================= ============================== ========
-SeChangeNotifyPrivilege       Bypass traverse checking       Enabled 
-SeIncreaseWorkingSetPrivilege Increase a process working set Disabled

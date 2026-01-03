@@ -1,5 +1,0 @@
-C:\Windows\Panther\UnattendGC
-C:\Windows\Panther\UnattendGC\diagerr.xml
-C:\Windows\Panther\UnattendGC\diagwrn.xml
-C:\Windows\Panther\UnattendGC\setupact.log
-C:\Windows\Panther\UnattendGC\setuperr.log

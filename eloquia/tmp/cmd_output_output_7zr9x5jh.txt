@@ -1,2 +1,0 @@
-C:\Program Files\Automation Scripts\FW-Cleaner.ps1
-C:\Program Files\Automation Scripts\update-hosts.ps1

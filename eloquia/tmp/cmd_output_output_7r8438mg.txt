@@ -1,2 +1,0 @@
-FindDomainForAccount: Call to DsGetDcNameWithAccountW failed with return value 0x0000054B
-Could not find account Olivia.KAT

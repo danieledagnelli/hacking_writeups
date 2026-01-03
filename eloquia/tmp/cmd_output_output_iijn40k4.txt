@@ -1,1 +1,0 @@
-Junction created for C:\Web\Qooqle\log.csv <<===>> C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin\Debug

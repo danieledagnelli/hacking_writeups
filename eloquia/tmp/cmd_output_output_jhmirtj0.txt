@@ -1,8 +1,0 @@
- Volume in drive C has no label.
- Volume Serial Number is 22C6-32BB
-
- Directory of C:\Web\Eloquia\static
-
-01/03/2026  01:54 AM           332,346 qooqle.b64
-               1 File(s)        332,346 bytes
-               0 Dir(s)   4,231,917,568 bytes free

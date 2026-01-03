@@ -1,2 +1,0 @@
-System Idle Process              0                            0          8 K Unknown         NT AUTHORITY\SYSTEM                                    36:24:01 N/A                                                                     
-System                           4                            0        120 K Unknown         N/A                                                     0:01:57 N/A                                                                     

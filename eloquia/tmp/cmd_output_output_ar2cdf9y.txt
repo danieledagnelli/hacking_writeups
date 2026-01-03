@@ -1,8 +1,0 @@
-
-User accounts for \\ELOQUIA
-
--------------------------------------------------------------------------------
-Administrator            DefaultAccount           Guest                    
-Olivia.KAT               WDAGUtilityAccount       web                      
-The command completed successfully.
-

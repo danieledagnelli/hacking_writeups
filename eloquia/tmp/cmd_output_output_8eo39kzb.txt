@@ -1,8 +1,0 @@
-C:\Program Files\Qooqle IPS Software\Failure2Ban - Prototype\Failure2Ban\bin\Debug\Failure2Ban.exe.config ELOQUIA\Olivia.KAT:(I)(RX,W)
-                                                                                                          NT AUTHORITY\SYSTEM:(I)(F)
-                                                                                                          BUILTIN\Administrators:(I)(F)
-                                                                                                          BUILTIN\Users:(I)(RX)
-                                                                                                          APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
-                                                                                                          APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
-
-Successfully processed 1 files; Failed processing 0 files
